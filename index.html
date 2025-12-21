@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pet-sonality Profiler: Uncover Your Inner Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>The Pet-sonality Profiler 🐾</h1>
+    <h2>Uncover the (Highly Dubious) Truth About Yourself</h2>
+
+    <!-- PET PROFILER CONTROLS -->
+    <div class="controls">
+        <select id="pet-selection">
+            <option value="">-- Choose Your Pet Type --</option>
+        </select>
+
+        <select id="breed-selection">
+            <option value="">-- Select Specific Breed (if applicable) --</option>
+        </select>
+
+        <button id="generate-button">Unleash the Profile!</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div id="portrait-output">
+        <p>Select a pet and unleash your disturbingly accurate profile.</p>
+    </div>
+
+    <div class="joke" id="pet-joke"></div>
+
+    <!-- ================= QUIZ SECTION ================= -->
+
+    <section id="quiz-section">
+        <h2>Still have no pet? 🐾❓</h2>
+        <h3>Wondering which one suits you best?</h3>
+        <p>Take a short quiz and get instant suggestions!</p>
+
+        <div class="controls quiz-controls">
+            <button id="start-quiz-btn">Start the Quiz</button>
+        </div>
+
+        <!-- QUIZ FORM (HIDDEN INITIALLY) -->
+        <form id="quiz-form" class="hidden">
+            <div>
+            <button type="button" class="close-btn-2" id="close-quiz">Hide Quiz</button>
+            </div>
+
+            <fieldset>
+                <legend>Which statements describe you?</legend>
+
+                <label><input type="checkbox" data-pet="Dog"> I love being active and outdoors</label><br>
+                <label><input type="checkbox" data-pet="Cat"> I value independence and quiet time</label><br>
+                <label><input type="checkbox" data-pet="Bird"> I enjoy social interaction and communication</label><br>
+                <label><input type="checkbox" data-pet="Reptile"> I prefer low-maintenance companions</label><br>
+                <label><input type="checkbox" data-pet="Horse"> Nature and freedom are essential to me</label><br>
+                <label><input type="checkbox" data-pet="Fish"> I find calm routines relaxing</label><br>
+                <label><input type="checkbox" data-pet="Hamster"> I have limited space and time</label><br>
+                <label><input type="checkbox" data-pet="Rabbit"> I’m gentle, patient, and empathetic</label>
+            </fieldset>
+
+            <button type="button" id="reveal-pet-btn">
+                Reveal My Ideal Pet
+            </button>
+        </form>
+
+        <!-- QUIZ RESULT -->
+        <div id="quiz-result"></div>
+    </section>
+
+ 
+
+    <!-- ================= PET THERAPY SECTION ================= -->
+
+    <section id="therapy-section">
+        <h2>Pet Therapy 🩺🐾</h2>
+        <h3>Evidence-based animal-assisted support</h3>
+
+        <p>
+            Select health conditions to explore which animals may provide
+            supportive benefits. Effects are supportive — not curative.
+        </p>
+
+        <div class="controls quiz-controls">
+        <button id="start-therapy-btn" class="primary-btn">
+            START THERAPY
+        </button>
+        </div>
+
+        <form id="therapy-form" class="hidden">
+            <div>
+            <button type="button" class="close-btn-2" id="close-therapy">Hide Therapy</button>
+            </div>
+
+            <fieldset>
+                <legend>Mental & Emotional Health</legend>
+                <label><input type="checkbox" data-condition="depression"> Depression / low mood</label><br>
+                <label><input type="checkbox" data-condition="anxiety"> Anxiety / chronic stress</label><br>
+                <label><input type="checkbox" data-condition="loneliness"> Loneliness / social isolation</label><br>
+                <label><input type="checkbox" data-condition="autism"> Autism / communication difficulties</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Physical & Neurological Health</legend>
+                <label><input type="checkbox" data-condition="cerebral_palsy"> Cerebral palsy</label><br>
+                <label><input type="checkbox" data-condition="stroke"> Stroke recovery</label><br>
+                <label><input type="checkbox" data-condition="ms"> Multiple sclerosis / spasticity</label>
+            </fieldset>
+
+            <button type="button" id="therapy-generate-btn">
+                RECOMMEND THERAPEUTIC PETS
+            </button>
+        </form>
+
+        <div id="therapy-result"></div>
+    </section>
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+    <p class="disclaimer">
+        <b>DISCLAIMER:</b><br>
+        While this app is intentionally humorous and non-diagnostic, it is built on
+        patterns repeatedly observed in scientific literature on pet ownership,
+        personality traits, and human behavior. In short: we did the reading — we just
+        chose to make it funny.<br><br>
+        Do not use to justify breakups, promotions, or existential crises.
+    </p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="references.html">References</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms of Use</a>
+    </nav>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

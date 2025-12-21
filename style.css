@@ -1,0 +1,200 @@
+/* CSS for a fun, whimsical, and responsive design */
+        :root {
+            --primary-color: #6a0dad; /* Deep Purple */
+            --secondary-color: #ffc107; /* Amber Yellow */
+            --background-color: #f7f3ff; /* Pale Lavender */
+            --accent-color: #20c997; /* Mint Green */
+            --card-bg: #ffffff;
+            --font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            text-shadow: 2px 2px 0 var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 5px;
+            font-size: 1.5em;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px dashed var(--primary-color);
+            border-radius: 15px;
+        }
+
+        select, button {
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid var(--primary-color);
+            font-size: 1em;
+            font-family: var(--font-family);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        select:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.4);
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #17a2b8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #breed-selection {
+            display: none; /* Hidden by default */
+        }
+
+        #portrait-output {
+            margin-top: 30px;
+            padding: 25px;
+            background-color: #fff9e6; /* Light yellow background */
+            border: 3px solid var(--secondary-color);
+            border-radius: 15px;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: none;
+        }
+
+        #portrait-output.visible {
+            opacity: 1;
+            display: block;
+        }
+
+        .portrait-section {
+            margin-bottom: 10px;
+        }
+
+        .portrait-section strong {
+            color: var(--primary-color);
+            display: inline-block;
+            width: 120px; /* Aligns the descriptions */
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #888;
+            font-style: italic;
+            border-style: dashed;
+            border-radius: 15px;
+            border-color: #6a0dad;
+        }
+
+        .joke {
+            margin-top: 15px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        @media (min-width: 600px) {
+            .controls {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            select, button {
+                flex: 1;
+                max-width: 30%;
+            }
+        }
+
+        .hidden {
+    display: none;
+}
+
+.quiz-controls {
+    justify-content: center;
+}
+
+#quiz-result {
+    margin-top: 20px;
+}
+
+.score-bar {
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 6px 0;
+}
+
+.score-fill {
+    height: 12px;
+    background: #6a5acd;
+}
+
+.close-btn {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #c0392b;
+}
+
+.close-btn-2 {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    font-size: 1em;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.close-btn-2:hover {
+    color: red;
+}
