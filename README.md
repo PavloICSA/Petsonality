@@ -1,4 +1,5 @@
 # 🐾 Pet-sonality Profiler
+[![Launch App](https://img.shields.io/badge/Try_it-Here-blue)](https://petsonality.netlify.app/)
 
 **Pet-sonality Profiler** is a lightweight web app that explores the curious relationship between people and their pets.
 
